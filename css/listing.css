@@ -1,0 +1,36 @@
+/* header css */
+.hide_nav {
+  visibility: hidden;
+  width: 0px;
+}
+.small-heading {
+  color: #303264 !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.2em;
+  text-decoration: none;
+}
+.right_m {
+  margin-right: -50px;
+}
+.navbar {
+  height: 100px !important;
+}
+.headerSearch {
+  visibility: visible;
+}
+.co_bg {
+  background-image: url(../img/s2.jpeg);
+  height: 300px;
+  filter: grayscale(50%);
+}
+.filter_section {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+
+}
+.co_detail_card{
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+
+}

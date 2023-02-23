@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>academyCheck</title>
+    <link rel="icon" type="image/x-icon" href="./img/ac_logo.png">
+    <link href="./css/first.css" rel="stylesheet">
+    <link href="./css/basic.css" rel="stylesheet">
+    <link href="./css/first_resp.css" rel="stylesheet">
+    <link href="./css/swiper.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!-- Owl Stylesheets -->
+        <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.css">
+    <style>
+        .ali {
+            background-color: aliceblue;
+        }
+
+        .look {
+            text-align: center;
+            transition: 0.5s;
+            margin: 55px !important;
+            padding: 25px;
+        }
+
+        .owl_img {
+            width: 120px !important;
+            height: 120px !important;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .look:hover {
+
+            background-color: rgb(255, 255, 255);
+
+            box-shadow: 0 0 30px rgb(0 0 0 / 20%);
+            border-radius: 5px;
+        }
+
+        .bb {
+            font-size: large;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="gap1"></div> -->
+    <header>
+
+        <nav class="navbar navbar-expand-sm px-2 shadow-sm fixed-top bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark flex1" href="index.html"><img class="logo" src="./img/ac_logo.png">
+                    <h3 class="h33 m-1">AcademyCheck</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"><i class="bi-border-width" style="color: black;"></i></span>
+                </button>
+                <!-- mobile view  -->
+                <div class="collapse navbar-collapse hide_nav " id="mynavbar">
+                    <div class="collapse navbar-collapse m-1" id="mynavbar">
+                        <div class="dropdown">
+                            <button type="button"
+                                class="btn dropdown-toggle border-top-0 border-left-0 border-right-0 rounded-0 px-3 border-bottom"
+                                data-bs-toggle="dropdown">
+                                <span class="m-3"> <i class="bi-geo-alt-fill text-danger"
+                                        style="font-size: 15px;"></i>&nbsp;City-name</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delhi</a></li>
+                                <li><a class="dropdown-item" href="#">Jaipur</a></li>
+                                <li><a class="dropdown-item" href="#">Noida</a></li>
+                            </ul>
+                        </div>
+                        <ul class="navbar-nav me-auto m-3">
+                            <li class="nav-item">
+                                <a class="nav-link small-heading" href="listing.html">Explore Coachings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link small-heading" href="#">Discover Localities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link small-heading" href="compare.html">Compare Coachings</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle small-heading" href="#" role="button"
+                                    data-bs-toggle="dropdown">Resources</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">knowledge</a></li>
+                                    <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">A third link</a></li> -->
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link small-heading" href="#">My Dashboard</a>
+                            </li> -->
+                        </ul>
+                        <div class="d-flex align-items-center"><a class="nav-link" href="javascript:void(0)"> <span
+                                    class="align-items-center px-3 ml-5"><i class="bi-cart-fill text-big1"></i>
+                                    <span class="small-heading align-items-center">Cart</span>
+                                </span></a>
+                            <span> <button class="btn btn-outline-primary my-3" type="button">Sign In</button>
+                            </span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="gap1"></div>
+    <div class="gap1"></div>
+    <section id="search">
+        <div class="search">
+            <div class="flex4" style="height: 300px;">
+                <div>
+                    <div class="d-flex">
+                        <input class="form-control form" type="search" placeholder="Search coaching..."
+                            aria-label="Search">
+                        <a href="listing.html">
+                            <button class="btn btn-danger search_bordr" type="submit"> <span><i
+                                        class="bi-search"></i>&nbsp;Search</span></button></a>
+                        <br>
+                    </div>
+                    <div class="flex6">
+                        <div>
+                            <a href="scroll.html" style="">
+                                <p style="color: white;" class="py-3"><i class="bi-lightbulb mx-1"
+                                        style="color: yellow;"></i>How AcademyCheck works</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="looking">
+        <div class="ali py-5">
+            <div class="main_margin">
+
+                <h2>
+                    What are you looking for
+                </h2>
+                <p>AcademyCheck brings you the best of coaching and everything about it.</p>
+                <div class="wrapper" style="max-width: 1400px !important;">
+
+                    &nbsp;&nbsp;&nbsp;<i id="left" class="bi-chevron-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="carousel d-flex">
+                        <div class="look"> <img src="./img/p1.png" alt="img" draggable="false" class="owl_img"><b
+                                class="bb py-3">Near
+                                Coachings</b></div>
+                        <div class="look"> <img src="./img/p2.png" alt="img" draggable="false" class="owl_img"><b
+                                class="bb">New Session(2023)</b></div>
+                        <div class="look"> <img src="./img/p3.png" alt="img" draggable="false" class="owl_img"><b
+                                class="bb">Hostels</b></div>
+                        <div class="look"> <img src="./img/p1.png" alt="img" draggable="false" class="owl_img"><b
+                                class="bb">Exams</b></div>
+                        <div class="look"> <img src="./img/p2.png" alt="img" draggable="false" class="owl_img"><b
+                                class="bb">Near
+                                Coachings</b></div>
+                        <div class="look"> <img src="./img/p1.png" alt="img" draggable="false" class="owl_img"><b
+                                class="bb">Near
+                                Coachings</b></div>
+                        <div class="look"> <img src="./img/p4.png" alt="img" draggable="false" class="owl_img"><b
+                                class="bb">Near
+                                Coachings</b></div>
+
+                    </div>
+                    <i id="right" class="bi-chevron-right"></i>
+                </div>
+                <div class="flex6">
+                    <div class="py-3">
+                        <button class="btn btn-outline-danger">View More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="area" class="py-5">
+        <div class="main_margin">
+            <div class="row py-3">
+                <div class="col-sm-4">
+                    <img src="./img/2i.png">
+                </div>
+                <div class="col-sm-8">
+                    <h2>
+                        Popular areas in <span class="red_bo">Jaipur</span>
+                    </h2>
+                    <p>AcademyCheck brings you the best of Coachings and everything about it</p>
+                    <div class="flex5 py-3">
+                        <div class="card1">
+                            <div class="flex7">
+                                <div>
+                                    <h5>
+                                        Sodala
+                                        <br><span class="small_t">jaipur</span>
+                                    </h5>
+                                </div>
+
+                                <p class="pt-2"><i class="bi-arrow-right-circle-fill"></i></p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card1">
+                                <div class="flex7">
+                                    <div>
+                                        <h5>
+                                            Sodala
+                                            <br><span class="small_t">jaipur</span>
+                                        </h5>
+                                    </div>
+
+                                    <p class="pt-2"><i class="bi-arrow-right-circle-fill"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card1">
+                                <div class="flex7">
+                                    <div>
+                                        <h5>
+                                            Sodala
+                                            <br><span class="small_t">jaipur</span>
+                                        </h5>
+                                    </div>
+
+                                    <p class="pt-2"><i class="bi-arrow-right-circle-fill"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex5 py-3">
+                        <div class="card1">
+                            <div class="flex7">
+                                <div>
+                                    <h5>
+                                        Sodala
+                                        <br><span class="small_t">jaipur</span>
+                                    </h5>
+                                </div>
+
+                                <p class="pt-2"><i class="bi-arrow-right-circle-fill"></i></p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card1">
+                                <div class="flex7">
+                                    <div>
+                                        <h5>
+                                            Sodala
+                                            <br><span class="small_t">jaipur</span>
+                                        </h5>
+                                    </div>
+
+                                    <p class="pt-2"><i class="bi-arrow-right-circle-fill"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card1">
+                                <div class="flex7">
+                                    <div>
+                                        <h5>
+                                            Sodala
+                                            <br><span class="small_t">jaipur</span>
+                                        </h5>
+                                    </div>
+
+                                    <p class="pt-2"><i class="bi-arrow-right-circle-fill"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex6">
+                    <div class="py-3">
+                        <button class="btn btn-outline-danger">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="localities" class="py-5">
+        <div class="text-center py-3">
+            <h2>
+                Popular areas in <span class="red_bo">Jaipur</span>
+            </h2>
+            <p>AcademyCheck brings you the best of Coachings and everything about it</p>
+        </div>
+        <div class="main_margin">
+            <div class="flex5">
+                <div class="card2 border px-3 pt-3">
+                    <h5>Mohan marg, uttam nagar</h5>
+                    <p>25 coachings</p>
+                </div>
+                <div class="card2 border px-3 pt-3">
+                    <h5>Mohan marg, uttam nagar</h5>
+                    <p>25 coachings</p>
+                </div>
+                <div class="card2 border px-3 pt-3">
+                    <h5>Mohan marg, uttam nagar</h5>
+                    <p>25 coachings</p>
+                </div>
+                <div class="card2 border px-3 pt-3">
+                    <h5>Mohan marg, uttam nagar</h5>
+                    <p>25 coachings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="discover" class="py-5">
+        <div class="sky py-5">
+            <div class="text-center py-3">
+                <h2>
+                    Discover coachings by exams
+                </h2>
+                <p>We have listed coachings under each exam results. Pick your choice for the exam for you,
+                    we'll take you through the rest</p>
+            </div>
+            <div class="main_margin">
+                <div class="flex5">
+                    <div class="card3">
+                        <div class="over">
+                            <h5>IAS Coaching</h5>
+                            <p>15 coachings</p>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="over">
+                            <h5>IAS Coaching</h5>
+                            <p>15 coachings</p>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="over">
+                            <h5>IAS Coaching</h5>
+                            <p>15 coachings</p>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="over">
+                            <h5>IAS Coaching</h5>
+                            <p>15 coachings</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="tools" class="py-5">
+        <div class="text-center py-3">
+            <h2>
+                Tools to advance your search
+            </h2>
+            <p>We have listed coachings under each exam results. Pick your choice for the exam for you,
+                we'll take you through the rest</p>
+        </div>
+        <div class="main_margin">
+            <div class="flex5">
+                <div class="tool1">
+                    <div class="flex3">
+                        <div class="round_card5">
+                            <div>
+                                <img src="./img/1i.png" class="tool_img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="long_card4">
+                        <div class="text-center px-3 ">
+                            <h5>Explore and search</h5>
+                            <p>Make the right decisions with choosing coachings tools</p>
+                            <div style="float: right;" class="mt-5">
+                                <p class="px-3 blue">Search Now &nbsp;<i class="bi-arrow-right-circle-fill"></i></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tool2">
+                    <div class="flex3">
+                        <div class="round_card5">
+                            <div>
+                                <img src="./img/2i.png" class="tool_img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="long_card4">
+                        <div class="text-center px-3 ">
+                            <h5>Explore and search</h5>
+                            <p>Make the right decisions with choosing coachings tools</p>
+                            <div style="float: right;" class="mt-5">
+                                <p class="px-3 blue">Search Now &nbsp;<i class="bi-arrow-right-circle-fill"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool3">
+                    <div class="flex3">
+                        <div class="round_card5">
+                            <div>
+                                <img src="./img/3i.png" class="tool_img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="long_card4">
+                        <div class="text-center px-3 ">
+                            <h5>Explore and search</h5>
+                            <p>Make the right decisions with choosing coachings tools</p>
+                            <div style="float: right;" class="mt-5">
+                                <p class="px-3 blue">Search Now &nbsp;<i class="bi-arrow-right-circle-fill"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool4">
+                    <div class="flex3">
+                        <div class="round_card5">
+                            <div>
+                                <img src="./img/4i.png" class="tool_img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="long_card4">
+                        <div class="text-center px-3 ">
+                            <h5>Explore and search</h5>
+                            <p>Make the right decisions with choosing coachings tools</p>
+                            <div style="float: right;" class="mt-5">
+                                <p class="px-3 blue">Search Now &nbsp;<i class="bi-arrow-right-circle-fill"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gap2" style="margin-top: -60px;"></div>
+
+    </section>
+    <section id="comparison" class="py-5">
+        <div class="text-center py-3">
+            <h2>
+                Popular Comparisons of Jaipur
+            </h2>
+
+        </div>
+        <div class="main_margin">
+            <div class="flex5">
+                <div class="d-flex card6">
+                    <div class="left">
+
+                        <img src="./img/1i.png"><br>
+                        <b>St. coaching</b><br>
+                        <small>Lorem ipsum dolor sit</small>
+                    </div>
+                    <div class="mid d-flex align-items-center">
+                        <div class="mid_text">Vs</div>
+                    </div>
+                    <div class="right"> <img src="./img/2i.png"><br>
+                        <b>St. coaching</b><br>
+                        <small>Lorem ipsum dolor sit</small>
+
+                    </div>
+                </div>
+                <div class="d-flex card6">
+                    <div class="left">
+
+                        <img src="./img/1i.png"><br>
+                        <b>St. coaching</b><br>
+                        <small>Lorem ipsum dolor sit</small>
+                    </div>
+                    <div class="mid d-flex align-items-center">
+                        <div class="mid_text">Vs</div>
+                    </div>
+                    <div class="right"> <img src="./img/2i.png"><br>
+                        <b>St. coaching</b><br>
+                        <small>Lorem ipsum dolor sit</small>
+
+                    </div>
+                </div>
+                <div class="d-flex card6">
+                    <div class="left">
+
+                        <img src="./img/1i.png"><br>
+                        <b>St. coaching</b><br>
+                        <small>Lorem ipsum dolor sit</small>
+                    </div>
+                    <div class="mid d-flex align-items-center">
+                        <div class="mid_text">Vs</div>
+                    </div>
+                    <div class="right"> <img src="./img/2i.png"><br>
+                        <b>St. coaching</b><br>
+                        <small>Lorem ipsum dolor sit</small>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="looking" class="py-5">
+        <div class="main_margin">
+            <div class="text-center">
+                <h2>
+                    Most viewed coachings in <span class="red_bo">Jaipur</span>
+                </h2>
+                <p>AcademyCheck brings you the best of coaching and everything about it.</p>
+            </div>
+            <div class="carousel-wrap">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=1" />
+                      <span class="img-text">nightlife</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=2" />
+                      <span class="img-text">abstract</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=3" />
+                      <span class="img-text">animals</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=4" />
+                      <span class="img-text">nature</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=5" />
+                      <span class="img-text">business</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=6" />
+                      <span class="img-text">cats</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=7" />
+                      <span class="img-text">city</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=8" />
+                      <span class="img-text">food</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=9" />
+                      <span class="img-text">fashion</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=10" />
+                      <span class="img-text">people</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=11" />
+                      <span class="img-text">sports</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=12" />
+                      <span class="img-text">technics</span>
+                    </div>
+                    <div class="item">
+                      <img src="https://picsum.photos/640/480?pic=13" />
+                      <span class="img-text">transport</span>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="parents" class="pt-5">
+        <div class="sky py-5">
+            <div class="text-center py-3 d-flex justify-content-between">
+                <h2>
+                    Discover coachings by exams
+                </h2>
+                <p>We have listed coachings under each exam results. Pick your choice for the exam for you,
+                    we'll take you through the rest</p>
+            </div>
+            <div class="main_margin">
+                <div class="flex5">
+                    <div class="card7 border">
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, harum?</small>
+                        <hr>
+                        <div class="flex1">
+                            <img src="./img/1i.png" style="width: 50px;">
+                            <div class="left_m"><b>
+                                    Mr. Ajay kUmay</b><br>
+                                <small>Jaipur, Rajsthan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card7 border">
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, harum?</small>
+                        <hr>
+                        <div class="flex1">
+                            <img src="./img/1i.png" style="width: 50px;">
+                            <div class="left_m"><b>
+                                    Mr. Ajay kUmay</b><br>
+                                <small>Jaipur, Rajsthan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card7 border">
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, harum?</small>
+                        <hr>
+                        <div class="flex1">
+                            <img src="./img/1i.png" style="width: 50px;">
+                            <div class="left_m"><b>
+                                    Mr. Ajay kUmay</b><br>
+                                <small>Jaipur, Rajsthan</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="parents"></section>
+    <section id="blogs"></section>
+    <footer>
+        <div class="nb_footer">
+            <div class="main_margin">
+                <div class="row pt-3">
+                    <div class="col-sm-3">
+                        <div class="text-white text-center"><img src="./img/ac_logo.png" style="width: 200px;">
+                            AcademyCheck
+                            <p class="text-white">AcademyCheck brings you the best of coaching and everything about it.
+                                Here’s where most people are searching for coachings. Choose an area to begin exploring.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-white" style="color: white !important;">
+                        <h5>Cities</h5>
+                        <div class="pp">
+                            <p>Jaipur</p>
+                            <p>Delhi</p>
+                            <p>Noida</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-white">
+                        <h5>Explore Coachings</h5>
+                        <div class="pp">
+                            <p>Coachings in Jaipur</p>
+                            <p> Coachings in Delhi</p>
+                            <p> Coachings in Noida</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 text-white">
+                        <h5>For Students</h5>
+                        <div class="pp">
+                            <p>Coachings near me</p>
+                            <p> IAS coachings near me</p>
+                            <p> IFS coachings near me</p>
+                            <p> SSC coachings near me</p>
+                            <p> SBI coachings near me</p>
+                            <p> BANK coachings near me</p>
+
+                        </div>
+                        <h5 class="mt-1">Company & Policy</h5>
+                        <div class="pp">
+                            <p>About Us</p>
+                            <p> Contact Us</p>
+                            <p> Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        const carousel = document.querySelector(".carousel"),
+            firstImg = carousel.querySelectorAll("img")[0],
+            arrowIcons = document.querySelectorAll(".wrapper i");
+        let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+        const showHideIcons = () => {
+            // showing and hiding prev/next icon according to carousel scroll left value
+            let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+            arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+            arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+        }
+        arrowIcons.forEach(icon => {
+            icon.addEventListener("click", () => {
+                let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+                // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+                carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+                setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+            });
+        });
+        const autoSlide = () => {
+            // if there is no image left to scroll then return from here
+            if (carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+            positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+            let firstImgWidth = firstImg.clientWidth + 14;
+            // getting difference value that needs to add or reduce from carousel left to take middle img center
+            let valDifference = firstImgWidth - positionDiff;
+            if (carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+                return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+            }
+            // if user is scrolling to the left
+            carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+        }
+        const dragStart = (e) => {
+            // updatating global variables value on mouse down event
+            isDragStart = true;
+            prevPageX = e.pageX || e.touches[0].pageX;
+            prevScrollLeft = carousel.scrollLeft;
+        }
+        const dragging = (e) => {
+            // scrolling images/carousel to left according to mouse pointer
+            if (!isDragStart) return;
+            e.preventDefault();
+            isDragging = true;
+            carousel.classList.add("dragging");
+            positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+            carousel.scrollLeft = prevScrollLeft - positionDiff;
+            showHideIcons();
+        }
+        const dragStop = () => {
+            isDragStart = false;
+            carousel.classList.remove("dragging");
+            if (!isDragging) return;
+            isDragging = false;
+            autoSlide();
+        }
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("touchstart", dragStart);
+        document.addEventListener("mousemove", dragging);
+        carousel.addEventListener("touchmove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        carousel.addEventListener("touchend", dragStop);
+
+    </script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+
+<script>
+        $('.owl-carousel').owlCarousel({
+            margin: 10,
+            nav: true,
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+</script>
+
+</body>
+
+</html>

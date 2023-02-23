@@ -1,0 +1,141 @@
+.main_margin {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+  }
+  h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700 !important;
+  }
+  h3 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #303264;
+    font-size: 1.75rem;
+  }
+  .h33 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #303264;
+    font-size: 1.75rem !important;
+}
+  h4 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+  }
+  .h44{
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  h5 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+  }
+  p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    color: #797a7b;
+  }
+  .small-heading {
+    color: #303264 !important;
+    font-weight: 700;
+    font-size: .95rem;
+    margin-bottom: 0.2em;
+    text-decoration: none;
+}
+small{
+  font-size: .75rem !important;
+}
+.gap1 {
+  height: 100px;
+}
+.blue{
+  color: #1f5ca2 !important;
+  font-weight: 700;
+}
+.btn-primary{
+  color: #fff;
+  background-color: #1f5ca2;
+  border-color: #1f5ca2;
+}
+  .btn-outline-primary {
+    color: #1f5ca2 !important;
+    border-color: #1f5ca2 !important;
+}
+  .red_bo {
+    border-bottom: 3px solid red;
+  }
+  .logo {
+    width: 50px;
+  }
+  .d_block {
+    display: block;
+  }
+  .flex1 {
+    display: flex;
+    align-items: center;
+  }
+  .flex3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .flex4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .flex5 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .flex6 {
+    display: flex;
+    justify-content: end;
+  }
+  .flex7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex8 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .flex9{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .blue{
+    color: #1f5ca2 !important;
+    font-size: 0.80rem;
+  }
+  .nb_footer {
+    /* height: 400px; */
+    padding: 20px;
+    background-color: #1f5ca2;
+  }
+  .gap1{
+    height: 80px;
+  }
+  .text-big1 {
+    font-size: 1.05rem;
+    color: #303264;
+    font-weight: 700;
+}
+.searchh{
+  width: 400px !important;
+}
+.pp p{
+  color: white !important;
+}

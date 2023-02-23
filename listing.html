@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coaching listing</title>
+    <link rel="icon" type="image/x-icon" href="./img/ac_logo.png">
+    <link href="./css/listing.css" rel="stylesheet">
+    <link href="./css/basic.css" rel="stylesheet">
+    <link href="./css/first_resp.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+    <section id="fixed_nav">
+        <nav class="navbar navbar-expand-sm bg-white shadow-sm fixed-top">
+            <div class="container main_margin">
+                <a class="navbar-brand text-dark flex1" href="index.html" href="javascript:void(0)"><img class="logo"
+                    src="./img/ac_logo.png">
+                    <h3 class="h22 m-1">AcademyCheck</h3>
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"><i class="bi-border-width" style="color: black;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <div class="headerSearch w-100">
+                 <div class="flex5 w-100">
+                    <div class="d-flex">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Jaipur
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    <div class="">
+                        <input class="form-control sea" type="search" placeholder="Search Coaching by name.."
+                            aria-label="Search">
+                    </div>
+                </div>
+                        <form class="flex1 hide1">
+                            <!-- <input class="form-control me-2" type="text" placeholder="Search"> -->
+                            <a class="nav-link" href="javascript:void(0)"> <span class="align-items-center px-3 ml-5"><i
+                                        class="bi-cart-fill text-big1"></i>
+                                    <span class="small-heading align-items-center">Cart</span>
+                                </span></a>
+                            <button class="btn btn-outline-primary" type="button">Sign In</button>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="hide_nav shadow-sm bg-white">
+                        <div class="container">
+
+                            <div class="collapse navbar-collapse" id="mynavbar">
+                                <ul class="navbar-nav me-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link small-heading" href="#">Explore Schools</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link small-heading" href="#">Discover Localities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link small-heading" href="#">Admission Tracker</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle small-heading" href="#" role="button"
+                                            data-bs-toggle="dropdown">Resources</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Link</a></li>
+                                            <li><a class="dropdown-item" href="#">Another link</a></li>
+                                            <li><a class="dropdown-item" href="#">A third link</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link small-heading" href="#">My Dashboard</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form class="">
+                                <div>
+                                    <!-- <input class="form-control me-2" type="text" placeholder="Search"> -->
+                                    <span class="align-items-center px-3 ml-5"> <a class="nav-link"
+                                            href="javascript:void(0)"></a><i class="bi-cart-fill text-big1"></i>
+                                        <span class="small-heading align-items-center">Cart</span>
+                                    </span></a>
+                                    <button class="btn btn-primary" type="button">Sign In</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="gap1"></div>
+    <section id="scroll_nav">
+        <nav class="navbar navbar-expand-sm navbar-light topp pt-4">
+            <div class="container-fluid">
+                <!-- <button class="navbar-toggler fix_btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link small-heading" href="#">Explore Schools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link small-heading" href="#">Discover Localities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link small-heading" href="#">Admission Tracker</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle small-heading" href="#" role="button"
+                                data-bs-toggle="dropdown">Resources</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link</a></li>
+                                <li><a class="dropdown-item" href="#">Another link</a></li>
+                                <li><a class="dropdown-item" href="#">A third link</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link small-heading" href="#">My Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="co_ads">
+        <div class="co_bg">
+            <div class="main_margin">
+                <div class="flex1" style="height: 300px;">
+                    <div>
+                        <img src="./img/Icon.png" style="height: 100px;">
+                    </div>
+                    <div>
+                        <h3>IES coaching </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="filters" class="my-5">
+        <div class="row main_margin">
+            <div class="col-sm-4">
+                <div class="filter_section">
+                    <h4 class="p-3">Filter</h4>
+                    <hr>
+                    <b class="p-3">Address</b>
+                    <hr>
+                    <b class="p-3">Likes</b>
+                    <hr>
+                    <b class="p-3">Full Courses</b>
+                    <hr>
+                    <b class="p-3">Duration & Timing</b>
+                    <hr>
+                    <b class="p-3">Fees</b>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h4>Coachings in Jaipur</h4>
+                <div class="co_detail_card">
+                    <div class="row p-2">
+                        <div class="col-sm-2 text-center">
+                            <div style="display: block;">
+                                <img src="./img/Icon.png" style="height: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="flex5">
+                                <div><b>Vision Aim Coaching</b><br>
+                                    <small><i class="bi-geo-alt-fill m-1"></i>119, Apex Mall, Tonk Road
+                                        Avilable</small><br>
+                                    <small><i class="bi-geo-alt-fill m-1"></i>119, Apex Mall, Tonk Road Avilable</small>
+
+                                </div>
+                                <div class="flex1">
+                                    <img src="./img/1i.png" style="height: 50px;">
+                                    <div class="p-1">Official<br>
+                                        <small>Officaial Appliction</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-danger">1500</button>
+                                </div>
+
+                            </div>
+                            <div class="flex5 pt-3">
+                                <div>
+                                    <small>Classes Offered</small><br>
+                                    <b>SSC coaching</b>
+                                </div>
+                                <div>
+                                    <small>One Course-fee</small><br>
+                                    <b>7k-per course</b>
+                                </div>
+                                <div>
+                                    <small>Exam</small><br>
+                                    <b>SSC</b>
+                                </div>
+                                <div>
+                                    <small>Facuilty</small><br>
+                                    <b>10-1</b>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="flex5">
+                        <div><small>140+ students applied in last month</small></div>
+                        <div><button class="btn btn-outline-danger btn-sm">Compare</button>
+                            <a href="co_detail.html"><button class="btn btn-success btn-sm">Apply Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="main_margin border p-3"><small><b>Locality TrendsSee</b> coachings in your locality and students can
+            find easlily</small></div>
+    <section id="fee_struture" class="my-5">
+        <div class="main_margin">
+            <h3 class="h22 my-3">Coachings in Jaipur with Fees Structure</h3>
+            <table class="table table-bordered">
+                <thead style="background-color: #1f5ca2 !important;color:aliceblue">
+                    <tr>
+                        <th>Coachings in Jaipur</th>
+                        <th>Monthly Fee</th>
+                        <th>View Fee Struture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="details" class="my-5">
+        <div class="main_margin">
+            <h3 class="h22 my-3">Coachings in Jaipur</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ducimus, corrupti dolor asperiores illo
+                iste, natus esse ab ad est repudiandae aliquam incidunt, molestiae suscipit dicta modi obcaecati cumque
+                aliquid.</p>
+        </div>
+    </section>
+    <section id="admission" class="my-5">
+        <div class="main_margin">
+            <h3 class="h22 my-3">Coachings in Jaipur</h3>
+            <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, omnis!</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, omnis!</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, omnis!</li>
+            </ul>
+        </div>
+    </section>
+    <section id="diff" class="my-5">
+        <div class="main_margin">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="h22 my-3">Jaipur Coaching</h3><img src="./img/2i.png">
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="h22 my-3">Delhi Coaching</h3><img src="./img/3i.png">
+                </div>
+        </div>
+    </section>
+    <section id="faq" class="my-5">
+        <div class="main_margin">
+           
+            <h3 class="h22 my-3">FAQ</h3>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            What is Mothe pride Fee struture?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            Are admission open at Mothe pride?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                            body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Does Mother pride has hostel Facilities?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this
+                            would look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="explore" class="my-5">
+        <div class="main_margin"></div>
+    </section>
+    <footer>
+        <div class="nb_footer">
+            <div class="main_margin">
+                <div class="row pt-3">
+                    <div class="col-sm-3">
+                        <div class="text-white text-center"><img src="./img/3i.png">
+                            AcademyCheck
+                            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur ipsum
+                                voluptatem reiciendis saepe animi quaerat. Laboriosam, non in quidem dignissimos
+                                voluptas sit perspiciatis obcaecati aliquam totam sed aliquid corporis.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-center text-white">
+                        <h5>Cities</h5>
+                    </div>
+                    <div class="col-sm-2 text-white">
+                        <h5>Explore coachings</h5>
+                    </div>
+                    <div class="col-sm-2 text-white">
+                        <h5>Admission Tracker</h5>
+                    </div>
+                    <div class="col-sm-3 text-white">
+                        <h5>For students</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+@media(max-width: 991.98px) {
+  .flex5{
+    display: flex;
+    justify-content: center;
+  }
+  .search_bordr{
+    height: 50px;
+    }
+.form {
+    width: 300px !important;
+    height: 50px;
+  }
+  .hide1{
+    visibility: hidden;
+    height: 0;
+ }
+/* header */
+.hide_nav{
+  visibility: visible;
+  width: auto;
+  padding-bottom: 5px;
+}
+.headerSearch{
+  visibility: hidden;
+}
+.table{
+  visibility: hidden;
+  clear: both;
+  float: left;
+  margin: 10px auto 5px 20px;
+  width: 28%;
+  display: none;
+}
+.poll_bg{
+  background-color: #f5fdff;
+  height: 520px;
+}
+.poll_mid{
+  background-color: white;
+  height: 400px;
+}
+.gap1{
+  height: 40px;
+}
+.gap2 {
+  height: 0px;
+  background-color: white;
+}
+}

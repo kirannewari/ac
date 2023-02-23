@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coaching comparison</title>
+    <link rel="icon" type="image/x-icon" href="./img/ac_logo.png">
+    <link href="./css/listing.css" rel="stylesheet">
+
+    <link href="./css/compare.css" rel="stylesheet">
+    <link href="./css/basic.css" rel="stylesheet">
+    <!-- <link href="./css/first_resp.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+    <section id="fixed_nav">
+        <nav class="navbar navbar-expand-sm bg-white shadow-sm fixed-top">
+            <div class="container main_margin">
+                <a class="navbar-brand text-dark flex1" href="index.html" href="javascript:void(0)"><img class="logo"
+                        src="./img/ac_logo.png">
+                    <h3 class="h33 m-1">AcademyCheck</h3>
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"><i class="bi-border-width" style="color: black;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <div class="headerSearch w-100">
+                        <div class="flex5 w-100">
+                            <div class="d-flex">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Jaipur
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <input class="form-control searchh" type="search"
+                                        placeholder="Search Coaching by name.." aria-label="Search">
+                                </div>
+                            </div>
+                            <form class="flex1 hide1">
+                                <!-- <input class="form-control me-2" type="text" placeholder="Search"> -->
+                                <a class="nav-link" href="javascript:void(0)"> <span
+                                        class="align-items-center px-3 ml-5"><i class="bi-cart-fill text-big1"></i>
+                                        <span class="small-heading align-items-center">Cart</span>
+                                    </span></a>
+                                <button class="btn btn-outline-primary" type="button">Sign In</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="hide_nav shadow-sm bg-white">
+                        <div class="container">
+
+                            <div class="collapse navbar-collapse" id="mynavbar">
+                                <ul class="navbar-nav me-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link small-heading" href="#">Explore Schools</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link small-heading" href="#">Discover Localities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link small-heading" href="#">Admission Tracker</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle small-heading" href="#" role="button"
+                                            data-bs-toggle="dropdown">Resources</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Link</a></li>
+                                            <li><a class="dropdown-item" href="#">Another link</a></li>
+                                            <li><a class="dropdown-item" href="#">A third link</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link small-heading" href="#">My Dashboard</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form class="">
+                                <div>
+                                    <!-- <input class="form-control me-2" type="text" placeholder="Search"> -->
+                                    <span class="align-items-center px-3 ml-5"> <a class="nav-link"
+                                            href="javascript:void(0)"></a><i class="bi-cart-fill text-big1"></i>
+                                        <span class="small-heading align-items-center">Cart</span>
+                                    </span></a>
+                                    <button class="btn btn-primary" type="button">Sign In</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="gap1"></div>
+
+
+    <section id="search" class="my-5 py-3">
+        <div class="main_margin">
+            <label for="exampleDataList" class="form-label">
+                <h3 class="h33">Compare Coachings</h3>
+            </label>
+            <div class="flex10">
+                <div> <input class="form-control serch" list="datalistOptions" id="exampleDataList"
+                        placeholder="Enter coaching name1...">
+                    <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+                <div>
+                    <span class="vs">Vs</span>
+                </div>
+                <div> <input class="form-control serch" list="datalistOptions" id="exampleDataList"
+                        placeholder="Enter coaching name2...">
+                    <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="flex4 my-5">
+                <button class="btn btn-success">Compare</button>
+            </div>
+        </div>
+    </section>
+    <section id="comarison" class="my-5">
+        <div class="bg_gray py-3">
+            <div class="main_margin">
+                <div class="fix_co bg-white shadow-sm py-3">
+                    <div class="flex11 hid2">
+                        <div class="fc">
+                            <h3 class="fc h44">First Coaching</h3>
+                        </div>
+
+                        <div class="sc">
+                            <h3 class="h44">Second Coaching</h3>
+                        </div>
+                    </div>
+                    <div class="flex11 hid3">
+                        <div class="fc">
+                            <h3 class="fc">First <br>Coaching</h3>
+                        </div>
+
+                        <div class="sc">
+                            <h3 class="sc">Second <br>Coaching</h3>
+                        </div>
+                    </div>
+                </div>
+                <section class="my-3">
+                    <div class="bg-white shadow-sm py-3 mb-5">
+                        <h3 class="px-3 py-3 h44">Coaching Type</h3>
+                        <table class="table table-bordered">
+                            <thead>
+                                <!-- <tr>
+                                    <th scope="col">Coaching Name</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr> -->
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Coaching Name</th>
+                                    <td colspan="2">Drsiti Coaching</td>
+                                    <td>Lakshya Coaching</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Address</th>
+                                    <td colspan="2">d-10, laxmi building, gandhinagr Jaipur</td>
+                                    <td>laxmi building, gandhinagr jaipur</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Language</th>
+                                    <td colspan="2">Hindi, English</td>
+                                    <td>Hindi, Englishr</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">New Session</th>
+                                    <td colspan="2">3 March 2023</td>
+                                    <td>27 feb 2023</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Total Faculities</th>
+                                    <td colspan="2">12</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Year of Establistaions</th>
+                                    <td colspan="2">1997</td>
+                                    <td>2002</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Student Facuilty Ratio</th>
+                                    <td colspan="2">20:1</td>
+                                    <td>30:1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Year of Establistaions</th>
+                                    <td colspan="2">1997</td>
+                                    <td>2002</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                    <div class="bg-white shadow-sm py-3">
+                        <h3 class="px-3 py-3 h44">Fee Struture<span><small>&nbsp;&nbsp;(total cost for new admmision)</small></span></h3>
+                        <table class="table table-bordered">
+                            <thead>
+                                <!-- <tr>
+                                    <th scope="col">Coaching Name</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr> -->
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">IAS</th>
+                                    <td colspan="2">₹1,20,000</td>
+                                    <td>₹1,15,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">NDA</th>
+                                    <td colspan="2">₹80,000</td>
+                                    <td>₹85,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">RBI</th>
+                                    <td colspan="2">₹50,000</td>
+                                    <td>₹62,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">IFS(Indian forest Services)</th>
+                                    <td colspan="2">₹55,000</td>
+                                    <td>₹60,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">SSC</th>
+                                    <td colspan="2">₹22,000</td>
+                                    <td>₹20,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">RRB</th>
+                                    <td colspan="2">₹11,000</td>
+                                    <td>₹12,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bank</th>
+                                    <td colspan="2">₹10,000</td>
+                                    <td>₹9,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Year of Establistaions</th>
+                                    <td colspan="2">₹50,000</td>
+                                    <td>₹30,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+    <footer class="mt-3">
+        <div class="nb_footer">
+            <div class="main_margin">
+                <div class="row pt-3">
+                    <div class="col-sm-3">
+                        <div class="text-white text-center"><img src="./img/3i.png">
+                            AcademyCheck
+                            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+                                consequatur ipsum
+                                voluptatem reiciendis saepe animi quaerat. Laboriosam, non in quidem dignissimos
+                                voluptas sit perspiciatis obcaecati aliquam totam sed aliquid corporis.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-center text-white">
+                        <h5>Cities</h5>
+                    </div>
+                    <div class="col-sm-2 text-white">
+                        <h5>Explore coachings</h5>
+                    </div>
+                    <div class="col-sm-2 text-white">
+                        <h5>Admission Tracker</h5>
+                    </div>
+                    <div class="col-sm-3 text-white">
+                        <h5>For students</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
